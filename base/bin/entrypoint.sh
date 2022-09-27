@@ -122,7 +122,7 @@ if [[ -n "$MYSQL_PASSWORD" ]]; then
     echo "SHOW DATABASES" >/root/conntest.sql
     echo "WAITING FOR DB CONNECTION TO SUCCEED"
     echo "For new setups, this may take some time. You may see error messages"
-    until php /srv/www/horde/web/horde/bin/horde-sql-shell /root/conntest.sql &>/dev/null; do
+    until php /srv/www/horde/vendor/horde-sql-shell /root/conntest.sql &>/dev/null; do
         sleep 3
         echo "RETRYING"
     done
