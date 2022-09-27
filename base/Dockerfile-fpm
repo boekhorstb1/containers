@@ -1,4 +1,4 @@
-FROM ghcr.io/maintaina/containers/base:latest-runtime
+FROM ghcr.io/boekhorstb1/containers/base:latest-runtime
 
 RUN zypper --non-interactive install --no-confirm php7-fpm \
     && zypper clean -a 
