@@ -49,7 +49,7 @@ jobs:
 
      ## Spend time in a useful way
       - name: Pull most recent image
-        run: docker pull ghcr.io/maintaina/containers/groupware:latest-runtime
+        run: docker pull ghcr.io/boekhorstb1/containers/groupware:latest-runtime
 
       - name: Check if the base image is old and try a couple of times if a newer image gets available
         run: |
