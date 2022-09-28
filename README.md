@@ -5,6 +5,8 @@ These image builds are based on the openSUSE distribution's official container i
 
 Currently, the base image is openSUSE LEAP 15.3 for the normal flavour and Beta images with Tumbleweed and PHP 8 are built separately.
 
+**Please take note of the other README.md files in the directories for more technical details**
+
 ## base
 
 A horde environment with no extra apps installed.

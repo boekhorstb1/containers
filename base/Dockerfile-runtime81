@@ -56,7 +56,7 @@ RUN zypper --non-interactive ref && zypper --non-interactive install --no-recomm
     && mkdir -p /srv/www/horde \
     && /usr/local/bin/composer-installer \
     && mkdir -p /srv/original_config/apps \
-    && git clone --depth 5 https://github.com/maintaina-com/horde-deployment -b FRAMEWORK_6_0 /srv/www/horde \
+    && git clone --depth 5 https://github.com/boekhorstb1/horde-deployment -b FRAMEWORK_6_0 /srv/www/horde \
     && composer --no-interaction install \
     && composer --no-interaction clear-cache \
     && rm -rf /root/.composer/cache \
